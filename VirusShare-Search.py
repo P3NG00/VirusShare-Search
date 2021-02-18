@@ -10,7 +10,7 @@ from urllib.request import urlopen
 
 def downloader(directory, iteration):
 	# Downloads given URL
-	url = 'https://virusshare.com/hashes/VirusShare_%05d.md5' % iteration
+	url = 'https://virusshare.com/hashfiles/VirusShare_%05d.md5' % iteration
 	exists = os.path.isfile(directory + ("\VirusShare_%05d.md5" % iteration))
 	
 	if not exists:
